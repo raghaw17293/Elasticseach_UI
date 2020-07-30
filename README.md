@@ -19,7 +19,7 @@ If java is installed it will give - openjdk version "version_no.".
 
 ## Making changes to Elasticsearch configuration files. 
     • Go to elasticsearch directory (where it was extracted) → config → elasticsearch.yml
-Everything is commented out initially. Things to specify
+## Everything is commented out initially. Things to specify
     • <cluster.name: my_cluster_name>
     • <node.name: node_name>
     • For Master node: <node.master: true>
@@ -93,8 +93,7 @@ Skip step first if already installed.
     npm install -g create-react-app
     create-react-app name_of_your_app
 # for tag cloud
-open terminal and cd to name_of _your_app
-  ## 
+## open terminal and cd to name_of _your_app
      npm i tag-cloud 
      cd name_of_your_app
      npm start
@@ -102,19 +101,12 @@ open terminal and cd to name_of _your_app
   
 # Steps to show images or Videos :-
 1. Go to name_of_your_app/public directory and copy all images here .
-(for instance : in mine case - i have path as one field where path for all images is defined as
-&#39;path&#39;: &#39;frames1/name_of_frame.PNG; .So i created folder named frames1 inside
-name_of_your_app/public folder and copied all my images/frames corresponding to camera_id
-1 to it .Similarly, for camera_id 2 .
-And for Viedios I have folder named “Videos” inside name_of_your_app/public and all mine
+(for instance : in mine case - i have path as one field where path for all images is defined as path:frames1/name_of_frame.PNG; .So i created folder named frames1 inside name_of_your_app/public folder and copied all my images/frames corresponding to camera_id 1 to it .Similarly, for camera_id 2 .
+And for Videos I have folder named “Videos” inside name_of_your_app/public and all mine
 videos are inside this folder .)
 2. Go to name_of_your_app/src folder and under open App.js and add your components here .
-(in our case just copy and paste the code in it and just change &lt;ReactiveBase
-app=”elasticsearch_index_name&quot;
-url =&quot;http://localhost:9200&quot;
-&gt;
-.)
+
 3. relod the page it must render all images and Videos or images .(in our case it render only if
 data pushed to es cluster has the same mapping that i defined in python script.)
-#index.max_inner_result_window in es to change size.
+
 
